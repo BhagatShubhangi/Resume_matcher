@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Match Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 30px; }
+        h2 { color: #2c3e50; }
+        ul { padding-left: 20px; }
+        .job { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h2>Extracted Skills</h2>
+    <ul>
+        {% for skill in skills %}
+        <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Best Matching Jobs</h2>
+    {% for job in jobs %}
+    <div class="job">
+        <h3>{{ job.title }} — {{ job.match }}%</h3>
+        <p><strong>Matched:</strong> {{ job.matched | join(', ') }}</p>
+        <p><strong>Missing:</strong> {{ job.missing | join(', ') }}</p>
+    </div>
+    {% endfor %}
+</body>
+</html>

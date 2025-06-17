@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block title %}Match Results{% endblock %}
+
+{% block content %}
+<h2 class="mb-4 text-center">Results Based on Your Resume</h2>
+<div class="text-end mb-4">
+  <form action="/download_report" method="POST">
+    <input type="hidden" name="skills" value="{{ skills | join(',') }}">
+    <input type="hidden" name="jobs" value="{{ jobs | tojson }}">
+    <button type="submit" class="btn btn-outline-primary">
+      <i class="fas fa-file-download"></i> Download Report as PDF
+    </button>
+  </form>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <h4>✅ Extracted Skills</h4>
+    <ul class="list-group mb-4">
+      {% for skill in skills %}
+        <li class="list-group-item">
+          <i class="fas fa-check-circle text-success me-2"></i>{{ skill }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="col-md-6">
+    <h4>📄 Best Matching Jobs</h4>
+    {% for job in jobs %}
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">{{ job.title }}</h5>
+          <div class="progress mb-2" style="height: 20px;">
+            <div class="progress-bar bg-info" role="progressbar" style="width: {{ job.match }}%;">
+              {{ job.match }}%
+            </div>
+          </div>
+          <p class="mb-1"><strong>Matched Skills:</strong> {{ job.matched | join(', ') }}</p>
+          <p><strong>Missing Skills:</strong> {{ job.missing | join(', ') }}</p>
+
+          {% if job.missing %}
+          <p class="text-muted"><em>Tip: Consider learning {{ job.missing | join(', ') }} to improve your chances!</em></p>
+            {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+
+
