@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Frontend Developer",
+    "skills": ["html", "css", "javascript", "react"]
+  },
+  {
+    "title": "Backend Developer",
+    "skills": ["python", "flask", "sql"]
+  },
+  {
+    "title": "Data Analyst",
+    "skills": ["excel", "python", "data analysis", "sql"]
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "skills": ["python", "machine learning", "deep learning", "nlp"]
+  },
+  {
+    "title": "Full Stack Developer",
+    "skills": ["html", "css", "javascript", "react", "node.js", "mongoDB"]
+  },
+  {
+    "title": "DevOps Engineer",
+    "skills": ["docker", "kubernetes", "aws", "ci/cd", "linux"]
+  },
+  {
+    "title": "Cloud Engineer",
+    "skills": ["aws", "azure", "gcp", "terraform", "cloud networking"]
+  },
+  {
+    "title": "Cybersecurity Analyst",
+    "skills": ["network security", "penetration testing", "firewalls", "siem"]
+  },
+  {
+    "title": "iOS Developer",
+    "skills": ["swift", "xcode", "ui/ux", "coredata"]
+  },
+  {
+    "title": "Android Developer",
+    "skills": ["java", "kotlin", "android studio", "firebase"]
+  },
+  {
+    "title": "UI/UX Designer",
+    "skills": ["figma", "adobe xd", "user research", "wireframing"]
+  },
+  {
+    "title": "Product Manager",
+    "skills": ["agile", "scrum", "roadmapping", "stakeholder management"]
+  },
+  {
+    "title": "Database Administrator",
+    "skills": ["sql", "oracle", "database tuning", "backup and recovery"]
+  },
+  {
+    "title": "Business Analyst",
+    "skills": ["requirements gathering", "process modeling", "sql", "stakeholder communication"]
+  },
+  {
+    "title": "Data Engineer",
+    "skills": ["python", "spark", "airflow", "hadoop", "etl"]
+  },
+  {
+    "title": "AI Researcher",
+    "skills": ["machine learning", "deep learning", "tensorflow", "research papers"]
+  },
+  {
+    "title": "Game Developer",
+    "skills": ["unity", "c#", "3d modeling", "game physics"]
+  },
+  {
+    "title": "Software Tester",
+    "skills": ["manual testing", "automation", "selenium", "bug tracking"]
+  },
+  {
+    "title": "Technical Writer",
+    "skills": ["markdown", "documentation", "api writing", "technical clarity"]
+  },
+  {
+    "title": "Blockchain Developer",
+    "skills": ["solidity", "web3.js", "ethereum", "smart contracts"]
+  },
+  {
+    "title": "AR/VR Developer",
+    "skills": ["unity", "c#", "oculus sdk", "3d graphics"]
+  },
+  {
+    "title": "System Administrator",
+    "skills": ["linux", "bash", "networking", "server management"]
+  },
+  {
+    "title": "Robotics Engineer",
+    "skills": ["ros", "c++", "python", "embedded systems"]
+  },
+  {
+    "title": "IT Support Specialist",
+    "skills": ["troubleshooting", "hardware", "windows", "ticketing systems"]
+  }
+]
