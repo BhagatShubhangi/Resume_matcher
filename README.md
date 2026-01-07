@@ -15,8 +15,6 @@ The project uses basic Natural Language Processing (NLP) techniques and a rule-b
 * How It Works
 * Use Cases
 * Future Enhancements
-* Author
-* Support
 
 ---
 
@@ -144,13 +142,6 @@ http://127.0.0.1:5000/
 * ATS-style resume parsing
 * Interactive dashboards and visualizations
 * AI-based resume improvement suggestions
-
----
-
-## 👩‍💻 Author
-
-**Shubhangi Bhagat**
-GitHub: [https://github.com/BhagatShubhangi](https://github.com/BhagatShubhangi)
 
 ---
 
