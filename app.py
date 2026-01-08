@@ -36,3 +36,4 @@ def download_report():
     jobs = json.loads(request.form['jobs'])
     pdf_path = generate_pdf(skills, jobs)
     return send_file(pdf_path, as_attachment=True)
+
